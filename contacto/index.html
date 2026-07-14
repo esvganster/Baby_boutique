@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta a Olive's Baby Boutique para pedidos personalizados, bordados y regalos infantiles.">
+  <title>Contacto | Olive's Baby Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" data-header>
+    <nav class="navbar" aria-label="Navegacion principal">
+      <a class="brand" href="../index.html" aria-label="Olive's Baby Boutique inicio">
+        <span class="brand-mark">O</span>
+        <span><strong>Olive's</strong><small>Baby Boutique</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" data-nav-menu>
+        <a class="nav-link" href="../index.html">Inicio</a>
+        <a class="nav-link" href="../servicios/index.html">Servicios</a>
+        <a class="nav-link active" href="index.html">Contacto</a>
+        <a class="nav-cta" href="https://wa.me/18090000000" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero">
+      <p class="eyebrow reveal">Contacto</p>
+      <h1 class="reveal">Hablemos del detalle que quieres crear.</h1>
+      <p class="reveal">Cuentanos la ocasion, la pieza y el nombre a personalizar. Te orientamos con calidez en cada paso.</p>
+    </section>
+
+    <section class="contact-layout section-pad">
+      <div class="contact-card reveal">
+        <h2>Canales directos</h2>
+        <a class="contact-action" href="https://wa.me/18090000000" target="_blank" rel="noopener" data-track-click="whatsapp">
+          <span>WhatsApp</span>
+          <strong>Solicitar pedido</strong>
+        </a>
+        <a class="contact-action" href="https://www.instagram.com/olivesbabyboutique" target="_blank" rel="noopener" data-track-click="instagram">
+          <span>Instagram</span>
+          <strong>@olivesbabyboutique</strong>
+        </a>
+        <div class="info-list">
+          <p><strong>Elaboracion:</strong> 5 a 10 dias habiles.</p>
+          <p><strong>Pagos:</strong> 50% para iniciar personalizados y 50% al entregar.</p>
+          <p><strong>Entregas:</strong> Pick Up o Uber a cuenta del cliente.</p>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" data-contact-form>
+        <div class="form-row">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-row">
+          <label for="telefono">Telefono</label>
+          <input id="telefono" name="telefono" type="tel" placeholder="Tu WhatsApp" required>
+        </div>
+        <div class="form-row">
+          <label for="pedido">Tipo de pedido</label>
+          <select id="pedido" name="pedido" required>
+            <option value="">Selecciona una opcion</option>
+            <option>Bordado personalizado</option>
+            <option>Ropa o accesorio</option>
+            <option>Regalo para nacimiento</option>
+            <option>Ocasion especial</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Ej: manta bordada con el nombre Lucia, tonos rosa y marfil..." required></textarea>
+        </div>
+        <button class="btn primary" type="submit">Preparar mensaje</button>
+        <p class="form-feedback" role="status" data-form-feedback></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Olive's Baby Boutique</p>
+    <p>Estamos listas para ayudarte a crear un recuerdo especial.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
