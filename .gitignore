@@ -1,0 +1,17 @@
+# Sistema operativo
+Thumbs.db
+Desktop.ini
+
+# Editores
+.vscode/
+.idea/
+
+# Dependencias y builds comunes
+node_modules/
+dist/
+build/
+
+# Variables locales
+.env
+.env.*
+
